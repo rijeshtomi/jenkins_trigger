@@ -1,3 +1,13 @@
+properties(
+    [
+        parameters(
+            [
+                string(defaultValue: 'Default', description: '', name: 'project'),
+                string(defaultValue: 'qe_p', description: '', name: 'pipe')
+            ]
+        )
+    ]
+)
 node {
    def mvnHome
    //def artVersion = UUID.randomUUID().toString()
